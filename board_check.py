@@ -25,3 +25,4 @@ def boards_outputs(board):
 
 
 
+
