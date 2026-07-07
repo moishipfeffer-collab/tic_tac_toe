@@ -10,7 +10,7 @@ def print_board (board:list):
         print()
 
 def input_explain ():
-    print ("to play, please enter the row index\n and then the column index\n as seen in the picture:")
+    print ("to play, please enter the row index\nand then the column index\n as seen in the picture:")
     print (""" 
         columnn 
             1  2  3

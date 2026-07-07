@@ -1,5 +1,5 @@
 def get_index():
-    print("please enter row and then column (1-3):" )
+    print("please enter row, pres enter and then column (1-3):" )
     row = int(input())
     column = int(input())
     if (row or column > 3) or (row or column <1):
