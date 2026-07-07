@@ -7,14 +7,14 @@ def check_board_column(board):
         if board[0][y]==board[1][y]==board[2][y]:
             return True
 def check_board_full(board):
-    if not " " in board:
+    if "-" not in board:
         return True
 
 def boards_outputs():
     if check_board_row:
-        print("win!")
+        print("you won!")
     elif check_board_column:
-        print("win!")
+        print("you won!")
     elif check_board_full:
         print("board is full, game ovar!")
     
