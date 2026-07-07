@@ -10,8 +10,14 @@ def print_board (board:list):
         print()
 
 def input_explain ():
-    print (" to play, please enter the index (1-9) you would like to put your symbol")
-    print (""" 1  2  3
-               4  5  6
-               7  8  9
+    print (" to play, please enter the index of row and column as seen in the picture: you would like to put your symbol")
+    print (""" 
+    columnn 1  2  3
+    Row 1   -  -  -
+        2   -  -  -
+        3   -  -  -
            """)
+    
+board = create_board()
+print_board(board)
+input_explain()
