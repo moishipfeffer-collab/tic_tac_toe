@@ -18,6 +18,3 @@ def input_explain ():
         2   -  -  -
         3   -  -  -
            """)
-    
-board = create_board()
-input_explain()
