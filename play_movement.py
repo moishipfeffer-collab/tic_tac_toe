@@ -4,8 +4,8 @@ def get_index():
 
     while row > 3 or column > 3 or row <1 or column <1:
         print ("index out of range")
-        row = int(input("please enter the row and click enter"))
-        column = int(input("please enter the column and hit enter"))
+        row = int(input("please enter the row and click enter: "))
+        column = int(input("please enter the column and hit enter: "))
             
     return row, column
 
