@@ -3,9 +3,11 @@ def get_index():
     return index
 
 def is_free(board,row,column):
-    board,row,column == "-"
-    return board[row][column]
+    if board[row][column] == "-":
+        return True
+    else:
+        False
 
-def mark_board(board, index,column ,symbol):
-    board[index][column] = symbol
-        
+def mark_board(board, row,column ,symbol):
+    board[row][column] = symbol
+    return board
