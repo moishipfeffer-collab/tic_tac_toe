@@ -7,7 +7,6 @@ def main ():
     ask_player_name()
     input_explain()
     board = create_board ()
-    turns_played = 0
 
     for turn in range (9):
         row, column = get_index()
@@ -15,7 +14,6 @@ def main ():
         if is_free(board,row,column):
             mark_board(board,row,column,'X')
             print_board(board)
-            turns_played +=1
 
         else:
             print ("that index wasn't free")
