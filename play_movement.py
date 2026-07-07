@@ -1,6 +1,8 @@
 def get_index():
-    index= int(input("choose a place (1-9): "))
-    return index
+    print("please enter row and then column (1-3):" )
+    row = int(input())
+    column = int(input())
+    return row, column
 
 def is_free(board,row,column):
     if board[row][column] == "-":
