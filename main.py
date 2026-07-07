@@ -25,7 +25,7 @@ def main ():
             continue
         
         if all_checks(board):
-            boards_outputs (board)
+            boards_outputs (board, player, name1, name2)
             break
 
         if turn == 9:

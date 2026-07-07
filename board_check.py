@@ -20,13 +20,18 @@ def check_board_diagonal(board):
         return True
 
 
-def boards_outputs(board):
+def boards_outputs(board,player,name1,name2):
+    print()
+    if player % 2 !=0:
+        winner = name1
+    else:
+        winner = name2
     if check_board_row(board):
-        print("You Won!\nGame Over!" )
+        print(f"{winner} You Won!\nGame Over!" )
     elif check_board_column(board):
-        print("You Won!\nGame Over!")
+        print(f"{winner} You Won!\nGame Over!")
     elif check_board_diagonal(board):
-        print("you won!\ngame over! ")
+        print(f"{winner} You Won!\nGame Over! ")
 
 
 
