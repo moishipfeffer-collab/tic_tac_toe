@@ -8,7 +8,14 @@ def check_board_column(board):
             return True
 def check_board_full(board):
     if not " " in board:
-        print("the board is full, game over")
-    
+        return True
+
+def boards_outputs():
+    if check_board_row:
+        print("win!")
+    elif check_board_column:
+        print("win!")
+    elif check_board_full:
+        print("board is full, game ovar!")
     
 
