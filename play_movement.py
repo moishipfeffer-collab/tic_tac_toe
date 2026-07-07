@@ -1,17 +1,11 @@
 def get_index():
-    while True:
-#        try:
-            index= int(input("choose a place (1-9): "))
-            if 1 <= index <=9:
-                break
-            print('index must be between 1 and 9 ')
-#        except ValueError:
-#            print('please enter a number ')    
+    index= int(input("choose a place (1-9): "))
     return index
 
-def is_free(board,index):
-    return board[index] == " "
+def is_free(board,row,column):
+    board,row,column == "-"
+    return board[row][column]
 
-def mark_board(board, index, symbol):
-    board[index] = symbol
+def mark_board(board, index,column ,symbol):
+    board[index][column] = symbol
         
