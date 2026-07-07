@@ -7,11 +7,14 @@ def check_board_column(board):
         if board[0][y]==board[1][y]==board[2][y] and board[0][y] != "-":
             return True
 
+
 def check_board_diagonal(board):
     if board[0][0]==board[1][1]==board[2][2] and board[0][0] != "-":
         return True
     elif board[0][2]==board[1][1]==board[2][0] and board[0][2] != "-":
         return True
+
+
 def boards_outputs(board):
     if check_board_row(board):
         print("You Won!\nGame Over!" )
@@ -19,4 +22,6 @@ def boards_outputs(board):
         print("You Won!\nGame Over!")
     elif check_board_diagonal(board):
         print("you won!\ngame over! ")
+
+
 
