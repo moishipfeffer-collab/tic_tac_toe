@@ -1,3 +1,8 @@
+def all_checks (board):
+    if check_board_column(board) or check_board_row(board) or check_board_diagonal(board):
+        return True
+
+
 def check_board_row(board):
     for x in board:
         if  x[0]==x[1]==x[2] and x[0] !="-":
