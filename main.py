@@ -9,7 +9,7 @@ def main ():
     board = create_board ()
     turns_played = 0
 
-    for i in range (9):
+    for turn in range (9):
         row, column = get_index()
         
         if is_free(board,row,column):
@@ -19,14 +19,14 @@ def main ():
 
         else:
             print ("that index wasn't free")
-            i-=1
+            turn-=1
             continue
         
         if check_board_row(board) or check_board_column(board):
             boards_outputs (board)
             break
 
-        if i == 9:
+        if turn == 9:
             print ("Board is full, game over!")
 
 main ()
