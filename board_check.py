@@ -1,0 +1,21 @@
+def check_board_row(board):
+    for x in board:
+        if  x[0]==x[1]==x[2]:
+            return True
+def check_board_column(board):
+    for y in range(3):
+        if board[0][y]==board[1][y]==board[2][y]:
+            return True
+def check_board_full(board):
+    if "-" not in board:
+        return True
+
+def boards_outputs():
+    if check_board_row:
+        print("you won!")
+    elif check_board_column:
+        print("you won!")
+    elif check_board_full:
+        print("board is full, game ovar!")
+    
+
