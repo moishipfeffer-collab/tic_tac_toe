@@ -1,4 +1,4 @@
-from board_check import check_board_column,check_board_full,check_board_row,boards_outputs
+from board_check import check_board_column,check_board_row,boards_outputs
 from board import print_board, create_board,input_explain
 from play_movement import is_free, get_index, mark_board
 from players import ask_player_name
