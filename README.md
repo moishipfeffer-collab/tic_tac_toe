@@ -1,1 +1,1 @@
-# tic_tac_toe
+# this file has 3 functions: 1. creating the board 2. printing it out 3. an explanation how the indexes work
