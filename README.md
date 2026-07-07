@@ -1,11 +1,12 @@
-  1. As you enter the game we ask you your player name . 
-  2. You will be welcome in to the game and will be given the symbol for you to play with.
-  3. You will be asked to enter row (you will need to press enter between each action) and column as its the index in the map.
-  4. There is a map of the options you have to play in . and the range of row and column.
-  5. In a case you have won the game you will recive a note 'You Won!', game over and will exit the game .
-  6. we added an option to win also in a diagonal position.
-  7. As of now we run the demo please enter correct infromtion : from 1 to 3 per row and column, and not out of the game board, and enter intger numbers. 
-  Enjoy the game!
+A 2D tic tac toe game:
+
+  1. When you enter the game please enter your name (a message will be sent).
+  2. the game will present that your symbol is an X.
+  3. there will be an explanation printed on the screen how to enter the indexes to play the game with a board-game map.
+  4. start entering the indexes.
+  5. each turn we check if the index is available. if it isnt you are requested to re-enter a new index.
+  6. each turn we also check if the player won the game. if you won an appropriate messege will be sent out.
+  7. if the board is full (after the 9th turn) a messege will be sent out that the board is full
 
 
 
