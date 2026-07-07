@@ -1,7 +1,17 @@
-  1. The user is getting in the game and gives his name. 
-  2. then he gets an opening sentnce with explenation how and where to enter the index and will see a "map" of the board .
-  3. as we run the demo please enter correct infromtion : from 1 to 9 , and not out of the game board ,and enter int numbers. 
-  4. in a case the board is full and no more space you will get noted the board is full. 
+A 2D tic tac toe game:
+
+  1. When you enter the game please enter your name (a message will be sent).
+  2. the game will present that your symbol is an X.
+  3. there will be an explanation printed on the screen how to enter the indexes to play the game with a board-game map.
+  4. start entering the indexes.
+  5. each turn we check if the index is available. if it isnt you are requested to re-enter a new index.
+  6. each turn we also check if the player won the game. if you won an appropriate messege will be sent out.
+  7. if the board is full (after the 9th turn) a messege will be sent out that the board is full
+
+
+
+  
+   
   
   
   
