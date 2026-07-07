@@ -11,7 +11,7 @@ def main ():
 
     for turn in range (9):
         row, column = get_index()
-        
+    
         if is_free(board,row,column):
             mark_board(board,row,column,'X')
             print_board(board)

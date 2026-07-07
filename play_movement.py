@@ -1,19 +1,18 @@
 def get_index():
-    print("please enter row, pres enter and then column (1-3):" )
-    row = int(input())
-    column = int(input())
+    row = int(input("please enter the row and click enter"))
+    column = int(input("please enter the column and hit enter"))
 
-    if (row or column) > 3 or (row or column) <1:
+    while row > 3 or column > 3 or row <1 or column <1:
         print ("index out of range")
-        get_index ()
-        
+        row = int(input("please enter the row and click enter"))
+        column = int(input("please enter the column and hit enter"))
+            
     return row, column
 
 def is_free(board,row,column):
     if board[row-1][column-1] == "-":
         return True
-    else:
-        False
+    
 
 def mark_board(board, row,column ,symbol):
     board[row-1][column-1] = symbol
