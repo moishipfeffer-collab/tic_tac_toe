@@ -9,9 +9,9 @@ def print_board (board:list):
             print (f"{column}", end ="  ")
         print()
 
-def input_explain ():
+def input_explain (name1):
     print ("to play, please enter the row index\nand then the column index\n as seen in the picture:")
-    print (""" 
+    print (f""" 
         columnn 
             1  2  3
     Row 1   -  -  -
@@ -19,4 +19,5 @@ def input_explain ():
         3   -  -  -
            
            Lets Start Playing!
+           {name1} you are going to start!
            """)
