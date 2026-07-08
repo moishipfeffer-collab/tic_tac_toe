@@ -26,12 +26,8 @@ def boards_outputs(board,player,name1,name2):
         winner = name1
     else:
         winner = name2
-    if check_board_row(board):
+    if all_checks(board):
         print(f"{winner} You Won!\nGame Over!" )
-    elif check_board_column(board):
-        print(f"{winner} You Won!\nGame Over!")
-    elif check_board_diagonal(board):
-        print(f"{winner} You Won!\nGame Over! ")
 
 
 
