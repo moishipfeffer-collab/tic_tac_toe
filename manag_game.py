@@ -10,9 +10,7 @@ def run_game():
     player = 1
 
     for turn in range (9):
-        valid=False
-        while not valid:
-            try:
+        
                 row, column = get_index(player, name1, name2)
     
                 if is_free(board,row,column):
@@ -26,12 +24,8 @@ def run_game():
                     print ("that index wasn't free") 
                     turn-=1
                     continue
-                valid=True
-            except ValueError:
-                print("you can enter numbers only!")
-    
 
-        
+            
         if all_checks(board):
             boards_outputs (board, player, name1, name2)
             break
