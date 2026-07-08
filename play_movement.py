@@ -1,6 +1,11 @@
 def get_simbol(name1,name2):
     simbol1=input(f"{name1} please choose a simbol:\n ")
     simbol2=input(f"{name2} please choose a simbol:\n ")
+    while simbol1==simbol2:
+        print("please choose diffrent simbols!")
+        simbol1=input(f"{name1} please choose a simbol:\n ")
+        simbol2=input(f"{name2} please choose a simbol:\n ")
+
     return simbol1,simbol2
 
 def get_index(player,name1,name2):
